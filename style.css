@@ -37,9 +37,12 @@ body {
 
 .container {
   display: flex;
-  height: 320px;
-  margin: 0 auto;
+  height: 370px;
+  margin: 0 460px;
   width: 640px;
+  transform: translateY(-50% -50%);
+  left: 50%;
+  top: 50%;
 }
 
 @media (max-width: 767px) {
@@ -50,44 +53,9 @@ body {
   }
 }
 
-.left {
-  background: white;
-  height: 305px;
-  top: 5px;
-  position: relative;
-  width: 285px;
-  margin: 0px 0px 0px 65px;
-}
-
-@media (max-width: 767px) {
-  .left {
-    height: 100%;
-    left: 20px;
-    width: 150px;
-    max-height: 270px;
-  }
-}
-
-.login {
-  font-size: 50px;
-  font-weight: 900;
-  margin: 60px 30px 50px;
-}
-
-.eula {
-  color: #999;
-  font-size: 14px;
-  line-height: 1;
-  margin: 30px;
-  position: relative;
-  top: 50px;
-  width: 200px;
-  height: 17px;
-}
-
 .right {
   background: #2f2841;
-  box-shadow: 0px 0px 55px 35px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 0px 55px 35px rgba(87, 23, 59, 0.22);
   color: #f1f1f2;
   width: 50%;
 }
@@ -101,9 +69,24 @@ body {
   }
 }
 
+.login {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 90px;
+
+  position: absolute;
+  width: 219px;
+  height: 89px;
+  padding: 0px 100px;
+}
+
 svg {
   position: absolute;
   width: 320px;
+  transform: translateY(-50% -50%);
+  top: 24%;
 }
 
 path {
@@ -114,8 +97,11 @@ path {
 }
 
 .form {
-  margin: 40px;
+  margin: 70px; 
   position: absolute;
+  z-index: 1;
+  width: 114px;
+  height: 48px;
 }
 
 label {
@@ -148,7 +134,7 @@ input::-moz-focus-inner {
   transition: color 300ms;
 
   position: absolute;
-  left: 50%;
+  left: 80%;
   transform: translateX(-50%);
 
   cursor: pointer;

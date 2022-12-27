@@ -11,14 +11,14 @@
 }
 
 body {
-  background: #180148;
+  background: #201b2c;
   font-family: "inter", sans-serif;
   margin: 0;
   padding: 20px;
 }
 
 .page {
-  background: #180148;
+  background: #201b2c;
   display: flex;
   flex-direction: column;
   height: calc(100% - 40px);
@@ -52,10 +52,11 @@ body {
 
 .left {
   background: white;
-  height: calc(100%n- 40px);
-  top: 20px;
-  position: 0;
+  height: 305px;
+  top: 5px;
+  position: relative;
   width: 285px;
+  margin: 0px 0px 0px 65px;
 }
 
 @media (max-width: 767px) {
@@ -70,22 +71,22 @@ body {
 .login {
   font-size: 50px;
   font-weight: 900;
-  margin: 60px 70px 50px;
+  margin: 60px 30px 50px;
 }
 
 .eula {
   color: #999;
   font-size: 14px;
-  line-height: 1.5;
-  margin: 40px;
+  line-height: 1.0;
+  margin: 30px;
   position: relative;
   top: 50px;
-  width: 250px;
+  width: 200px;
   height: 17px;
 }
 
 .right {
-  background: #474a59;
+  background: #2f2841;
   box-shadow: 0px 0px 55px 35px rgba(0, 0, 0, 0.22);
   color: #f1f1f2;
   width: 50%;
